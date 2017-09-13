@@ -3,7 +3,7 @@ package ratking
 import (
 	"bytes"
 	"encoding/json"
-	"fmt"
+//	"fmt"
 	"io"
 	"io/ioutil"
 	"net/http"
@@ -97,7 +97,7 @@ func (cli *Client) Do(req *http.Request, v interface{}) ([]byte, error) {
 	defer resp.Body.Close()
 
 	body, err = ioutil.ReadAll(resp.Body)
-	fmt.Println(string(body))
+//	fmt.Println(string(body))
 	if err != nil {
 		return body, err
 	}

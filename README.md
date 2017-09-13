@@ -39,3 +39,7 @@ Method | Name | Params
 GET | GetDestinyManifest | Nothing
 GET | SearchDestinyPlayer| membershipType string, Name string
 GET | GetHistoricalStatsForAccount| membershipType string, destinyMembershipId string
+GET | GetHistoricalStatsDefinition| Nothing
+GET | GetClanWeeklyRewardState| clanID int
+GET | GetPublicMilestoneContent| milestoneHash string
+GET | GetPublicMilestones| Nothing
