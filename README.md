@@ -12,7 +12,7 @@ const(
 
 func main() {
     api := rk.NewClient(nil, APIKey)
-    data, err := api.Player.SearchDestinyPlayer("psn", "SearchByThisName")
+    data, err := api.Player.SearchDestinyPlayer("TigerPsn", "SearchByThisName")
     if err != nil {
         return err
     }
