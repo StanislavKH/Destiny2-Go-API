@@ -20,9 +20,21 @@ func main() {
 }
 ```
 
+## Available membershipType list from Bungie.net
+
+Type  | Value
+----- | -----
+All   | -1
+None  |  0
+TigerXbox | 1
+TigerPsn | 2
+TigerBlizzard | 3
+TigerDemon | 10
+BungieNext | 254
+
 ## Active endpoints
 Method | Name | Params
 ------ | ---- | --------
 GET | GetDestinyManifest | Nothing
-GET | SearchDestinyPlayer| membershipType int, Name string
-GET | GetHistoricalStatsForAccount| membershipType int, destinyMembershipId string
+GET | SearchDestinyPlayer| membershipType string, Name string
+GET | GetHistoricalStatsForAccount| membershipType string, destinyMembershipId string

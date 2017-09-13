@@ -21,13 +21,13 @@ type ResponseData map[string]interface{}
 
 //Possible Membership types collection
 var BungieMembershipType = map[string]int{
-	"all":      -1,
-	"none":     0,
-	"xbox":     1,
-	"psn":      2,
-	"blizzard": 3,
-	"demon":    10,
-	"bungie":   254,
+	"All":           -1,
+	"None":          0,
+	"TigerXbox":     1,
+	"TigerPsn":      2,
+	"TigerBlizzard": 3,
+	"TigerDemon":    10,
+	"BungieNext":    254,
 }
 
 type Client struct {
